@@ -23,7 +23,6 @@ BEGIN {
     printf "%-7.2f %-8.2f %-7.2f\n", $3, $5, $8
 }'
 
-
 NETWORK_AWK_SCRIPT='
 /Average/ && $2 == "'"$INTERFACE"'" {
     rx_mb = $5 * 3600 / 1024
